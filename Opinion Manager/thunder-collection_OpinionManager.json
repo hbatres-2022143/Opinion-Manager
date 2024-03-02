@@ -1,0 +1,170 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "OpinionManager",
+    "dateExported": "2024-03-03T05:45:50.134Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "6c647d37-d6ff-41d7-becc-ae4460e9547d",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-03-03T04:35:10.327Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "2b734391-5d00-4cb7-9825-64063154f847",
+            "colId": "e2d0b616-9497-4b3c-95e1-f2b618ddc351",
+            "containerId": "6c647d37-d6ff-41d7-becc-ae4460e9547d",
+            "name": "Register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T04:35:29.135Z",
+            "modified": "2024-03-03T04:38:25.190Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Hermes"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Batres"
+                    },
+                    {
+                        "name": "username",
+                        "value": "hbatres-2022143"
+                    },
+                    {
+                        "name": "email",
+                        "value": "hbatres-2022143@kinal.edu.gt"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "36437689"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b7bdbe56-153a-4df0-af17-6601381028e5",
+            "colId": "e2d0b616-9497-4b3c-95e1-f2b618ddc351",
+            "containerId": "6c647d37-d6ff-41d7-becc-ae4460e9547d",
+            "name": "Login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-03T04:38:49.391Z",
+            "modified": "2024-03-03T04:42:47.460Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "hbatres-2022143"
+                    },
+                    {
+                        "name": "email",
+                        "value": "hbatres-2022143@kinal.edu.gt",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "password",
+                        "value": "123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4bace98a-e600-4a31-a15a-1fcb773ddd5e",
+            "colId": "e2d0b616-9497-4b3c-95e1-f2b618ddc351",
+            "containerId": "6c647d37-d6ff-41d7-becc-ae4460e9547d",
+            "name": "Upadate",
+            "url": "/user/update/",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-03T04:43:11.997Z",
+            "modified": "2024-03-03T04:45:15.918Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Marco"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Garcia"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "55906230",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8fb92e05-b48e-40ee-ab88-2642cc7274dc",
+            "colId": "e2d0b616-9497-4b3c-95e1-f2b618ddc351",
+            "containerId": "6c647d37-d6ff-41d7-becc-ae4460e9547d",
+            "name": "UpdatePassword",
+            "url": "/user/updatePassword/",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-03T04:45:42.423Z",
+            "modified": "2024-03-03T05:35:26.079Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "password",
+                        "value": "123"
+                    },
+                    {
+                        "name": "passwordNew",
+                        "value": "456"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:3200"
+        }
+    }
+}
